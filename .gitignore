@@ -12,3 +12,12 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 /composer.phar
+/.idea/$CACHE_FILE$
+/.idea/.gitignore
+/.idea/dataSources.xml
+/.idea/deployment.xml
+/.idea/estudos-laravel-jetstream.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/vcs.xml
