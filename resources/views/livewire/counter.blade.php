@@ -7,4 +7,9 @@
     <p>
         Resultado: {{ $resultado }}
     </p>
+
+    <p>
+        {{ $message }}
+        <button wire:click="$set('message', 'Hello')">Say Hi</button>
+    </p>
 </div>
