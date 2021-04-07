@@ -7,25 +7,22 @@ use Livewire\Component;
 class Counter extends Component
 {
     public $count = 0;
-    public $resultado = 'valor inicial';
-    public $message = 'Mensagem inicial';
+    public $message = 'Aguardando acontecer alguma coisa...';
 
-    protected $listeners = ['atualizaMensagem'];
 
-    public function atualizaMensagem() {
-        $this->message = 'A mensagem foi atualizada a partir do incremento!';
-    }
 
     public function increment()
     {
         $this->count++;
 
-        // chama outro
-        $this->emit('atualizaMensagem');
+        // todo: gerar um evento aqui, passando o contador como parâmetro
+
     }
 
     public function render()
     {
         return view('livewire.counter');
     }
+
+
 }
