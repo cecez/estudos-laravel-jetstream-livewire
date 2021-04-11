@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Events\QueroUmNumeroAleatorio;
 use Livewire\Component;
 
 class Counter extends Component
@@ -16,6 +17,7 @@ class Counter extends Component
         $this->count++;
 
         // todo: gerar um evento aqui, passando o contador como parâmetro
+        QueroUmNumeroAleatorio::dispatch($this->count);
 
     }
 

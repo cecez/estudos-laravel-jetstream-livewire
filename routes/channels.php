@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Broadcast;
 Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
+
+Broadcast::channel('aletorios.{numeroUmId}', function ($user, $numeroUmId) {
+//    return $user->id === Order::findOrNew($orderId)->user_id;
+    //return $numeroUmId == '1';
+    return true;
+});
