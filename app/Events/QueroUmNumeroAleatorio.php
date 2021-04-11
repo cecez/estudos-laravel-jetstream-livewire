@@ -23,7 +23,7 @@ class QueroUmNumeroAleatorio implements ShouldBroadcast
      */
     public function __construct($contador)
     {
-        $this->contador = $contador;
+        $this->contador = rand(1, $contador);
     }
 
     /**
@@ -33,7 +33,7 @@ class QueroUmNumeroAleatorio implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('aletorios.1');
+        return new PrivateChannel('aleatorios.1');
     }
 
 }
