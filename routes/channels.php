@@ -22,3 +22,7 @@ Broadcast::channel('aleatorios.{numeroUmId}', function ($user, $numeroUmId) {
     //return $numeroUmId == '1';
     return true;
 });
+
+Broadcast::channel('canal-hash', function ($user) {
+    return true;
+});
