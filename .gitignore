@@ -21,3 +21,4 @@ yarn-error.log
 /.idea/modules.xml
 /.idea/php.xml
 /.idea/vcs.xml
+.idea/
