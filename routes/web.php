@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function (Request $request) {
+
+    $request->session()->flash('flash.banner', 'Deu ruim.');
+    $request->session()->flash('flash.bannerStyle', 'danger');
+
     return view('dashboard');
 })->name('dashboard');
